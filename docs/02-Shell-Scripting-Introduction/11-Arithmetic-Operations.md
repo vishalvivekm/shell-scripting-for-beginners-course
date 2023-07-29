@@ -18,7 +18,7 @@ In this section, we will take a look at "Arithmetic Operations"
   $ expr 6 / 3
   ```
 - For Multiplication ( must escape the star symbol with a backslash like this cuz star is a reserved 
-rejects character in shell )
+regex character in shell )
   ```
   $ expr 6 \* 3
   ```
