@@ -4,7 +4,7 @@
 In this section, we will take a look at "Arithmetic Operations"
 - There are different methods with which we can perform arithemetic operations
 
-## expr
+## expr ( **mind the space**)
 - For addition
   ```
   $ expr 6 + 3
@@ -17,7 +17,8 @@ In this section, we will take a look at "Arithmetic Operations"
   ```
   $ expr 6 / 3
   ```
-- For Multiplication
+- For Multiplication ( must escape the star symbol with a backslash like this cuz star is a reserved 
+regex character in shell )
   ```
   $ expr 6 \* 3
   ```
@@ -34,7 +35,12 @@ In this section, we will take a look at "Arithmetic Operations"
   ![expr](../../images/expr.PNG)
   
 ## Double Parentheses
-- Another method for performing arithmetic operations is double parenthesis.
+- Another method for performing arithmetic operations is double parenthesis. (we encapsulate the expression inside a double parenthesis prefixed with a dollar symbol and either assign this operation to a variable or use echo to print it to screen. 
+Otherwise, 
+Shell will try to execute the 
+output of this operation 
+and throw an error "not a valid command".
+)
   ```
   $ echo $(( A + B ))
   $ echo $(( A-B ))
@@ -48,7 +54,7 @@ In this section, we will take a look at "Arithmetic Operations"
   $ echo $(( --A ))
   $ echo $(( A++ ))
   $ echo $(( A-- ))
-  ```
+  
   ![dp](../../images/dp.PNG)
   
 ## bc
